@@ -10,6 +10,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { NavsideComponent } from './navside/navside.component';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { MousePositionDirective } from './mouse-position.directive';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MousePositionDirective } from './mouse-position.directive';
     AppComponent,
     NavsideComponent,
     MousePositionDirective,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

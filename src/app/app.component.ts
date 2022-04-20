@@ -9,5 +9,6 @@ import { EChartsOption } from 'echarts';
 	styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+	constructor(public dataService:DataService){}
 
 }

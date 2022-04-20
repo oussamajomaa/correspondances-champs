@@ -1,4 +1,6 @@
-<app-navside></app-navside>
+<app-login *ngIf="!dataService.isAuthenticated()"></app-login>
+
+<app-navside *ngIf="dataService.isAuthenticated()"></app-navside>
 
 
 

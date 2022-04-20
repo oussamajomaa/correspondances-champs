@@ -1,0 +1,9 @@
+<div class="login">
+    <h5 class="my-2">Enter your email</h5>
+    <input matInput placeholder="Enter your mail" [(ngModel)]="email" type="email">
+    <h5 class="my-2">Enter your Password</h5>
+    <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="password">
+    <div class="my-2 rounded">
+        <button (click)="login()"  mat-raised-button class="btn btn-sm primary">Login</button>
+    </div>
+</div>

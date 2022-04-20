@@ -1,13 +1,34 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
+import { Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class DataService {
 
-	constructor(private http: HttpClient) { }
+	constructor(private http: HttpClient, private router: Router) { }
+
+	authState = new BehaviorSubject(false);
+
+	login(user) {
+		if (user.email === "admin@admin.fr" && user.password === "mts2022") {
+			// localStorage.setItem('status', 'logged')
+			this.router.navigateByUrl('chart')
+			this.authState.next(true)
+		}
+	}
+
+
+	// logout() {
+	// 	this.router.navigate(['login']);
+	// 	this.authState.next(false)
+	// }
+
+	isAuthenticated() {
+		return this.authState.value
+	}
 
 	// Cette methode va regrouper la liste selon le nom du fichier
 	groupBy(list:any, keyGetter:any) {
