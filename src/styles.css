@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --light: #dddddd;
+    --dark: #000;
+}
+
+@import "bootstrap";
+
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span,input,label,textarea,select,button,div{font-family: 'Montserrat', sans-serif;}
+h1,h2,h3,h4,h5,h6{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+
+/* class color */
+.primary{
+    color:white;
+    background-color: #002147;
+
+}
+
+.primary:hover{
+    color:white;
+    background-color: #002147d0;
+}
+
+.warning{
+    color:black;
+    background-color: #FFC107;
+}
+
+.warning:hover{
+    background-color: #ffc107d0;
+}
+
+.danger{
+    color:white;
+    background-color: #DC3545;
+}
+
+.danger:hover{
+    background-color: #dc3546d0;
+}
+
+.white{
+    color:black;
+    background-color: white;
+}
+
+.white:hover{
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+.info{
+    color:white;
+    background-color: #17A2B8;
+}
+
+.info:hover{
+    background-color: #17a3b8d0;
+}
+
+.success{
+    color:white;
+    background-color: #1E7E34;
+}
+
+.success:hover{
+    background-color: #1E7E34d0;
+}
+
+.secondary{
+    background-color: #e4e2e2;
+}
+
+.secondary:hover{
+    background-color: #e4e2e2d0;
+}
+
+.hover{
+    background-color: #fff;
+}
+.hover:hover{
+    background-color: #e4e2e2d0;
+}
+
